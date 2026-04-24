@@ -193,7 +193,13 @@ body {
     background: rgba(0, 0, 0, 0.98);
     border-bottom-color: var(--gold);
 }
+.nav-menu li a.active {
+    color: var(--gold);
+}
 
+.nav-menu li a.active::before {
+    width: 100%;
+}
 /* ===== LOGO CON IMAGEN ===== */
 .logo-container {
     display: flex;
@@ -841,8 +847,10 @@ body.menu-open {
     font-weight: 700;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-    background-clip: text;
     -webkit-background-clip: text;
+
+    background-clip: text;
+   
     color: transparent;
 }
 
@@ -1193,3 +1201,4 @@ html {
 .gallery-item:nth-child(6) img { animation-delay: 0.3s; }
 .gallery-item:nth-child(7) img { animation-delay: 0.35s; }
 .gallery-item:nth-child(8) img { animation-delay: 0.4s; }
+

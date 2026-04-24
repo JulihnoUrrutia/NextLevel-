@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover premium grooming services at Next Level Barbershop. Haircuts, beard grooming, coloring, and luxury packages available for men, women, and kids.">
+    <title>Next Level Barbershop - Premium Services</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/services.css">
+
+    <!-- GOOGLE FONTS & FONT AWESOME -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Next Level Barbershop" class="logo-img">
+            <span class="logo-text">Next Level</span>
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link active">Services</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="services-hero" aria-label="Services hero">
+            <div class="services-hero__overlay"></div>
+            <div class="services-hero__content container">
+                <h1 class="services-hero__title">Premium Services</h1>
+                <p class="services-hero__subtitle">Discover our exclusive grooming experiences</p>
+                <div class="services-hero__divider"></div>
+                <div class="services-hero__stats">
+                    <div class="stat">
+                        <span class="stat__number">15+</span>
+                        <span class="stat__label">Expert Barbers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">20+</span>
+                        <span class="stat__label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">10k+</span>
+                        <span class="stat__label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SEARCH & FILTERS SECTION -->
+        <section class="services-search" aria-label="Service search and filters">
+            <div class="container">
+                <!-- Search Box -->
+                <div class="search-wrapper">
+                    <div class="search-box">
+                        <i class="fas fa-search search-box__icon"></i>
+                        <input type="text" id="serviceSearch" class="search-box__input" placeholder="Search for a service... (e.g., fade, beard, color)" aria-label="Search services">
+                        <button id="clearSearch" class="search-box__clear" type="button" aria-label="Clear search">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- FILTROS PRINCIPALES: MEN / WOMEN / KIDS -->
+                <div class="primary-filters" role="tablist" aria-label="Service audience">
+                    <button class="primary-filter primary-filter--active" data-audience="all" role="tab">
+                        <i class="fas fa-users"></i>
+                        <span>All Services</span>
+                    </button>
+                    <button class="primary-filter" data-audience="men" role="tab">
+                        <i class="fas fa-mars"></i>
+                        <span>Men</span>
+                    </button>
+                    <button class="primary-filter" data-audience="women" role="tab">
+                        <i class="fas fa-venus"></i>
+                        <span>Women</span>
+                    </button>
+                    <button class="primary-filter" data-audience="kids" role="tab">
+                        <i class="fas fa-child"></i>
+                        <span>Kids</span>
+                    </button>
+                </div>
+
+                <!-- FILTROS SECUNDARIOS (Dinámicos según la selección) -->
+                <div class="secondary-filters" id="secondaryFilters">
+                    <!-- Los botones se generan dinámicamente con JavaScript -->
+                </div>
+
+                <!-- Search Results Info -->
+                <div id="searchResults" class="search-results" aria-live="polite"></div>
+
+                <!-- Services Grid -->
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Las tarjetas se generan dinámicamente con JavaScript -->
+                </div>
+
+                <!-- No Results Message -->
+                <div id="noResults" class="no-results">
+                    <i class="fas fa-search"></i>
+                    <h3>No services found</h3>
+                    <p>Try adjusting your search or filter criteria</p>
+                    <button id="resetFilters" class="btn btn--secondary">Reset Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section" aria-label="Call to action">
+            <div class="cta-container container">
+                <h2>Ready to elevate your style?</h2>
+                <p>Book your next appointment and experience the Next Level difference.</p>
+                <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn btn--primary cta-btn" target="_blank" rel="noopener noreferrer">
+                    Book Your Appointment <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Next Level</h3>
+                <p>Premium grooming experience for the modern gentleman.</p>
+                <div class="socials">
+                    <a href="https://facebook.com/tucuenta" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/tucuenta" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:info@nextlevel.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li>Mon - Fri: <span>9:00 AM - 8:00 PM</span></li>
+                    <li>Saturday: <span>10:00 AM - 6:00 PM</span></li>
+                    <li>Sunday: <span>Closed</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 4162 Carriage Square, Taylorsville, UT 84120</li>
+                    <li><i class="fas fa-phone-alt"></i> 801-435-5189</li>
+                    <li><i class="fas fa-envelope"></i> info@nextlevel.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Book Now</h4>
+                <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn-footer" target="_blank" rel="noopener noreferrer">
+                    Appointment <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Next Level Barbershop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/services.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

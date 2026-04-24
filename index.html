@@ -29,11 +29,11 @@
 
     <!-- MENÚ DE NAVEGACIÓN -->
     <ul class="nav-menu">
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">Services</a></li>
-        <li><a href="#" class="nav-link">About</a></li>
-        <li><a href="#" class="nav-link">Testimonials</a></li>
-        <li><a href="#" class="nav-link">Contact</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
 </header>
 
@@ -181,7 +181,7 @@
         <div class="footer-col">
             <h4>Contact Info</h4>
             <ul>
-                <li><i class="fas fa-map-marker-alt"></i> 4162 Carriage Square, Taylorsville, Utah</li>
+                <li><i class="fas fa-map-marker-alt"></i> 4162 Carriage Square, Taylorsville,  UT 84120</li>
                 <li><i class="fas fa-phone-alt"></i> 801-435-5189</li>
                 <li><i class="fas fa-envelope"></i> info@nextlevel.com</li>
             </ul>
@@ -199,117 +199,6 @@
         <p>&copy; 2026 Next Level Barbershop. All rights reserved.</p>
     </div>
 </footer>
-   <script>
-    // ========================================
-    // NAVBAR PREMIUM - JAVASCRIPT COMPLETO
-    // ========================================
-
-    (function() {
-        'use strict';
-
-        // Elementos del DOM
-        const navbar = document.querySelector('.navbar');
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-        const body = document.body;
-
-        // Crear overlay si no existe
-        let overlay = document.querySelector('.menu-overlay');
-        if (!overlay) {
-            overlay = document.createElement('div');
-            overlay.className = 'menu-overlay';
-            document.body.appendChild(overlay);
-        }
-
-        // ===== FUNCIÓN: Cerrar menú =====
-        function closeMenu() {
-            if (menuToggle) menuToggle.classList.remove('active');
-            if (navMenu) navMenu.classList.remove('active');
-            if (overlay) overlay.classList.remove('active');
-            body.classList.remove('menu-open');
-        }
-
-        // ===== FUNCIÓN: Abrir menú =====
-        function openMenu() {
-            if (menuToggle) menuToggle.classList.add('active');
-            if (navMenu) navMenu.classList.add('active');
-            if (overlay) overlay.classList.add('active');
-            body.classList.add('menu-open');
-        }
-
-        // ===== EFECTO SCROLL EN NAVBAR =====
-        function handleScroll() {
-            if (navbar) {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-        }
-
-        // ===== EVENTO: Scroll =====
-        window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Ejecutar al cargar
-
-        // ===== EVENTO: Click en botón hamburguesa =====
-        if (menuToggle && navMenu) {
-            menuToggle.addEventListener('click', function(e) {
-                e.stopPropagation();
-                if (navMenu.classList.contains('active')) {
-                    closeMenu();
-                } else {
-                    openMenu();
-                }
-            });
-        }
-
-        // ===== EVENTO: Cerrar al hacer click en enlaces =====
-        const navLinks = document.querySelectorAll('.nav-menu li a');
-        navLinks.forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                closeMenu();
-                
-                // Smooth scroll para enlaces internos
-                const targetId = this.getAttribute('href');
-                if (targetId && targetId !== '#') {
-                    e.preventDefault();
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        const offsetTop = targetElement.offsetTop - 80;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-
-        // ===== EVENTO: Cerrar al hacer click en overlay =====
-        if (overlay) {
-            overlay.addEventListener('click', closeMenu);
-        }
-
-        // ===== EVENTO: Cerrar al redimensionar a desktop =====
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                closeMenu();
-            }
-        });
-
-        // ===== EVENTO: Prevenir scroll en touch move cuando menú está abierto =====
-        if (navMenu) {
-            navMenu.addEventListener('touchmove', function(e) {
-                if (navMenu.classList.contains('active')) {
-                    e.stopPropagation();
-                }
-            });
-        }
-
-        // ===== LOG: Confirmar que el script cargó =====
-        console.log('✅ Navbar premium cargado correctamente');
-    })();
-</script>
+ <script src="js/navbar.js"></script>
 </body>
 </html>
