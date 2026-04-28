@@ -1,0 +1,901 @@
+/* ========================================
+   TESTIMONIALS.HTML - ESTILOS PREMIUM REDISEÑADOS
+   ======================================== */
+
+/* ========================================
+   VARIABLES
+   ======================================== */
+:root {
+    --testimonial-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --testimonial-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+    --testimonial-shadow-hover: 0 30px 50px -15px rgba(0, 0, 0, 0.25);
+    --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f5d76e 50%, #d4af37 100%);
+    --gold-gradient-soft: linear-gradient(135deg, rgba(212,175,55,0.1) 0%, rgba(212,175,55,0.05) 100%);
+    --dark-gradient: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+
+/* ========================================
+   HERO SECTION MEJORADO
+   ======================================== */
+.testimonials-hero {
+    height: 65vh;
+    min-height: 500px;
+    width: 100%;
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 100%), url('../img/herotest.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.testimonials-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.4) 100%);
+    z-index: 0;
+}
+
+.testimonials-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+}
+
+.testimonials-hero__content {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.testimonials-hero__title {
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: var(--font-secondary);
+    margin-bottom: 1rem;
+    animation: fadeInDown 0.8s ease;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+.testimonials-hero__title span {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    display: inline-block;
+}
+
+.testimonials-hero__subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.8s ease;
+    letter-spacing: 1px;
+}
+
+.testimonials-hero__divider {
+    width: 100px;
+    height: 4px;
+    background: var(--gold-gradient);
+    margin: 1.8rem auto;
+    animation: expandWidth 0.8s ease;
+    border-radius: 2px;
+}
+
+.testimonials-hero__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    animation: fadeInUp 1s ease;
+    background: rgba(0,0,0,0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: inline-flex;
+    padding: 12px 30px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(212,175,55,0.3);
+}
+
+.rating-stars {
+    display: flex;
+    gap: 8px;
+}
+
+.rating-stars i {
+    color: #ffc107;
+    font-size: 1.2rem;
+    filter: drop-shadow(0 0 3px rgba(255,193,7,0.3));
+}
+
+.rating-score {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--gold);
+    font-family: var(--font-secondary);
+}
+
+.rating-count {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   STATS SECTION MEJORADA
+   ======================================== */
+.stats-section {
+    padding: 60px 5%;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+    position: relative;
+    transform: translateY(-30px);
+    z-index: 10;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: var(--testimonial-shadow);
+    transition: var(--testimonial-transition);
+    border: 1px solid rgba(212,175,55,0.1);
+    position: relative;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gold-gradient);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.stat-card:hover::before {
+    transform: scaleX(1);
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--testimonial-shadow-hover);
+    border-color: rgba(212,175,55,0.3);
+}
+
+.stat-icon {
+    font-size: 2.8rem;
+    background: var(--gold-gradient-soft);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    transition: var(--testimonial-transition);
+}
+
+.stat-card:hover .stat-icon {
+    background: var(--gold-gradient);
+    transform: scale(1.05);
+}
+
+.stat-icon i {
+    color: var(--gold);
+    transition: var(--testimonial-transition);
+}
+
+.stat-card:hover .stat-icon i {
+    color: var(--black);
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--black);
+    margin-bottom: 8px;
+    font-family: var(--font-secondary);
+    background: linear-gradient(135deg, #333 0%, #111 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.stat-label {
+    color: #777;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* ========================================
+   FEATURED SECTION MEJORADA
+   ======================================== */
+.featured-section {
+    padding: 60px 5% 100px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    position: relative;
+}
+
+.featured-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-family: var(--font-secondary);
+    position: relative;
+    display: inline-block;
+}
+
+.section-title span {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.section-subtitle {
+    color: #888;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.title-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.title-decoration .line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.title-decoration .dot {
+    width: 10px;
+    height: 10px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+/* ========================================
+   SWIPER CAROUSEL - TARJETAS PREMIUM
+   ======================================== */
+.testimonials-swiper {
+    padding: 20px 0 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: var(--white);
+    border-radius: 28px;
+    padding: 35px;
+    margin: 20px 15px;
+    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.1);
+    transition: var(--testimonial-transition);
+    position: relative;
+    overflow: hidden;
+    
+ 
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+   
+    border: 1px solid rgba(212,175,55,0.1);
+}
+
+.testimonial-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 100% 0%, rgba(212,175,55,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px -15px rgba(0, 0, 0, 0.2);
+    border-color: rgba(212,175,55,0.3);
+}
+
+.testimonial-card.featured {
+    border: 1px solid rgba(212,175,55,0.25);
+    background: linear-gradient(135deg, #ffffff 0%, #fffef5 100%);
+    position: relative;
+}
+
+.testimonial-card.featured::before {
+    content: '★';
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: var(--gold);
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.testimonial-quote {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    opacity: 0.15;
+}
+
+.testimonial-quote i {
+    font-size: 4rem;
+    color: var(--gold);
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 25px;
+}
+
+.testimonial-stars i {
+    color: #ffc107;
+    font-size: 1rem;
+    filter: drop-shadow(0 0 2px rgba(255,193,7,0.3));
+}
+
+.testimonial-text {
+    color: #444;
+    line-height: 1.75;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.testimonial-text::-webkit-scrollbar {
+    width: 3px;
+}
+
+.testimonial-text::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.testimonial-text::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 10px;
+}
+
+/* ========================================
+   AUTHOR INITIALS - MEJORADOS
+   ======================================== */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 2px solid rgba(212,175,55,0.15);
+}
+
+.author-initial {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--gold-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: var(--black);
+    box-shadow: 0 8px 20px rgba(212,175,55,0.35);
+    transition: var(--testimonial-transition);
+    position: relative;
+}
+
+.author-initial::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    background: var(--gold-gradient);
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(5px);
+}
+
+.testimonial-card:hover .author-initial {
+    transform: scale(1.05);
+}
+
+.author-info h4 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: var(--black);
+    letter-spacing: 0.5px;
+}
+
+.author-info span {
+    font-size: 0.75rem;
+    color: #999;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+}
+
+/* Swiper Navigation */
+.swiper-pagination-bullet {
+    background: #ddd;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    transition: var(--testimonial-transition);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--gold);
+    width: 25px;
+    border-radius: 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--gold);
+    background: rgba(255,255,255,0.95);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transition: var(--testimonial-transition);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: var(--gold);
+    color: var(--black);
+    transform: scale(1.05);
+}
+
+/* ========================================
+   ALL TESTIMONIALS GRID - TARJETAS PREMIUM
+   ======================================== */
+.all-testimonials {
+    padding: 80px 5%;
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.testimonial-grid-item {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 8px 25px -10px rgba(0, 0, 0, 0.08);
+    transition: var(--testimonial-transition);
+    border: 1px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-grid-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gold-gradient);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.testimonial-grid-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+    border-color: rgba(212,175,55,0.2);
+}
+
+.testimonial-grid-item:hover::before {
+    transform: scaleX(1);
+}
+
+.testimonial-grid-stars {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 18px;
+}
+
+.testimonial-grid-stars i {
+    color: #ffc107;
+    font-size: 0.9rem;
+}
+
+.testimonial-grid-text {
+    color: #555;
+    line-height: 1.65;
+    font-size: 0.9rem;
+    margin-bottom: 22px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.testimonial-grid-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.testimonial-grid-author .author-initial {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+}
+
+.testimonial-grid-author h4 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.testimonial-grid-author span {
+    font-size: 0.7rem;
+    color: #999;
+}
+
+/* ========================================
+   CTA SECTION MEJORADA
+   ======================================== */
+.cta-section {
+    padding: 90px 5%;
+    background: var(--dark-gradient);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.cta-section::after {
+    content: '✦';
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    font-size: 200px;
+    opacity: 0.03;
+    color: var(--gold);
+    font-family: var(--font-secondary);
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 20px;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+}
+
+.cta-section p {
+    color: #aaa;
+    margin-bottom: 35px;
+    font-size: 1.05rem;
+}
+
+
+.btn--primary {
+    background: var(--gold);
+    color: var(--black);
+    padding: 15px 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn--primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-gold);
+}
+
+.btn--primary i {
+    transition: var(--transition);
+}
+
+.btn--primary:hover i {
+    transform: translateX(5px);
+}
+
+/* ========================================
+   ANIMATIONS MEJORADAS
+   ======================================== */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 100px;
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN MEJORADO
+   ======================================== */
+@media (max-width: 1200px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .testimonials-hero__title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-hero {
+        height: 55vh;
+        min-height: 450px;
+        background-attachment: scroll;
+        margin-top: 70px;
+    }
+    
+    .testimonials-hero__title {
+        font-size: 2.2rem;
+    }
+    
+    .testimonials-hero__subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .testimonials-hero__rating {
+        padding: 8px 20px;
+        gap: 8px;
+    }
+    
+    .rating-stars i {
+        font-size: 0.9rem;
+    }
+    
+    .rating-score {
+        font-size: 1.1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 1.8rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+        padding: 25px;
+        margin: 15px 10px;
+    }
+    
+    .testimonial-text {
+        max-height: 150px;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .btn--primary {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-hero__title {
+        font-size: 1.8rem;
+    }
+    
+    .testimonials-hero__subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .testimonial-text {
+        font-size: 0.85rem;
+    }
+    
+    .author-initial {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .author-info h4 {
+        font-size: 0.9rem;
+    }
+    
+    .author-info span {
+        font-size: 0.65rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .cta-section p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}

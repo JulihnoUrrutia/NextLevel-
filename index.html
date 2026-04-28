@@ -3,202 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Level Barbershop</title>
+    <meta name="description" content="Next Level Barbershop - La mejor barbería en Taylorsville, UT. Cortes de cabello, arreglo de barba, coloración y más. Reserva tu cita online.">
+    <meta name="keywords" content="barbería, barbershop, cortes de cabello, fade, barba, Taylorsville, Utah">
+    <meta name="author" content="Next Level Barbershop">
+    <meta name="geo.region" content="US-UT">
+    <meta name="geo.placename" content="Taylorsville">
+    <meta name="geo.position" content="40.68066;-111.94588">
+    <meta name="ICBM" content="40.68066, -111.94588">
+    <meta name="robots" content="index, follow">
+    <title>Next Level Barbershop | Barbería Premium en Taylorsville, UT</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- ICONOS (FONT AWESOME) -->
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="img/logo.png" alt="Next Level Logo">
+            <div class="spinner"></div>
+            <h3>NEXT LEVEL</h3>
+            <p>Loading experience...</p>
+        </div>
+    </div>
+
     <!-- NAVBAR -->
-   <header class="navbar">
-    <!-- LOGO CON IMAGEN -->
-    <div class="logo-container">
-        <img src="img/logo.png" alt="Next Level Barbershop" class="logo-img">
-        <span class="logo-text">Next Level</span>
-    </div>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Next Level Barbershop" class="logo-img">
+            <span class="logo-text">Next Level</span>
+        </div>
 
-    <!-- BOTÓN HAMBURGUESA -->
-    <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-    </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-    </ul>
-</header>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </header>
 
-    <!-- HERO -->
+    <!-- HERO SECTION - H1 IZQUIERDA, BOTÓN DERECHA -->
     <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-        <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn">Book Appointment</a>
-    </div>
-</section>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Next Level<br><span>Barbershop and Beauty </span></h1>
+        </div>
+        <div class="hero-btn">
+            <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn">Book Appointment</a>
+        </div>
+    </section>
 
-  
-  
+    <!-- SERVICES GALLERY -->
+    <section id="services" class="gallery">
+        <h2>BARBERSHOP & SALON</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-title="High Fade">
+                <img src="img/highfade2.png" alt="High Fade">
+            </div>
+            <div class="gallery-item" data-title="Classic Cut">
+                <img src="img/ClassicCut.png" alt="Classic Cut">
+            </div>
+            <div class="gallery-item" data-title="Beard Trim">
+                <img src="img/BeardTrim.png" alt="Beard Trim">
+            </div>
+            <div class="gallery-item" data-title="Skin Fade">
+                <img src="img/SkinFade.png" alt="Skin Fade">
+            </div>
+            <div class="gallery-item" data-title="Textured Flow Fade">
+                <img src="img/TextureFade.png" alt="Textured flow fade">
+            </div>
+            <div class="gallery-item" data-title="Artist Design">
+                <img src="img/Artistdesign.jpg" alt="Artist design">
+            </div>
+            <div class="gallery-item" data-title="Women's Perm">
+                <img src="img/WomensPerm.png" alt="Women's Perm">
+            </div>
+            <div class="gallery-item" data-title="Children's Cut">
+                <img src="img/childrencut.png" alt="Children's Cut">
+            </div>
+            <div class="gallery-item" data-title="Lash Lift And Tint">
+                <img src="img/Lashliftandtint.jpg" alt="Lash Lift And Tint">
+            </div>
+            <div class="gallery-item" data-title="Money Piece">
+                <img src="img/Moneypiecebalayage.jpg" alt="Money Piece Balayage">
+            </div>
+            <div class="gallery-item" data-title="Caramel Balayage">
+                <img src="img/Caramelbalayage.jpg" alt="Caramel Balayage">
+            </div>
+        </div>
+    </section>
 
-    <!-- SERVICES  GALLERY-->
-<section id="services" class="gallery">
-    <h2>BARBERSHOP & SALON</h2>
-
-    <div class="gallery-grid">
-        <div class="gallery-item" data-title="High Fade">
-            <img src="img/highfade2.png" alt="High Fade">
-        </div>
-
-        <div class="gallery-item" data-title="Classic Cut">
-            <img src="img/ClassicCut.png" alt="Classic Cut">
-        </div>
-
-        <div class="gallery-item" data-title="Beard Trim">
-            <img src="img/BeardTrim.png" alt="Beard Trim">
-        </div>
-
-        <div class="gallery-item" data-title="Skin Fade">
-            <img src="img/SkinFade.png" alt="Skin Fade">
-        </div>
-
-        <div class="gallery-item" data-title="Textured Flow Fade">
-            <img src="img/TextureFade.png" alt="Textured flow fade">
-        </div>
-
-        <div class="gallery-item" data-title="Artist Design">
-            <img src="img/Artistdesign.jpg" alt="Artist design">
-        </div>
-
-        <div class="gallery-item" data-title="Women's Perm">
-            <img src="img/WomensPerm.png" alt="Women's Perm">
-        </div>
-
-        <div class="gallery-item" data-title="Children's Cut">
-            <img src="img/childrencut.png" alt="Children's Cut">
-        </div>
-        <div class="gallery-item" data-title="Lash Lift And Tint">
-            <img src="img/Lashliftandtint.jpg" alt="Lash Lift And Tint">
-        </div>
-        <div class="gallery-item" data-title="Money Piece">
-            <img src="img/Moneypiecebalayage.jpg" alt="Money Piece Balayage">
-        </div>
-        <div class="gallery-item" data-title="Caramel Balayage">
-            <img src="img/Caramelbalayage.jpg" alt="Caramel Balayage">
-        </div>
-    </div>
-</section>
-      <!-- ABOUT -->
+    <!-- ABOUT SECTION -->
     <section id="about" class="about">
-    <div class="about-container">
-
-        <!-- IMAGEN -->
-        <div class="about-image">
-            <img src="img/about2.jpeg" alt="Barber">
-        </div>
-
-        <!-- TEXTO -->
-        <div class="about-text">
-
-           <h2 >Next Level Experience</h2>
-            <p>
-                Next Level Barbershop is a premium grooming experience for the entire family.
-                From precision cuts to modern styles, we take pride in delivering top-tier results.
-                Whether you know your look or need expert guidance, our professional barbers will take you to the next level.
-            </p>
-
-            <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn">Book Now</a>
-        </div>
-
-    </div>
-</section>
-
-    <!-- BENEFITS -->
-  <section class="benefits-section">
-
-    <h2 class="section-title center">Why Choose Us</h2>
-
-    <div class="benefits">
-
-        <div class="benefit benefit-1">
-            <div class="overlay">
-                <h3>No Waiting Time</h3>
-                <p>Book your appointment and skip the line.</p>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="img/about2.jpeg" alt="Barber">
+            </div>
+            <div class="about-text">
+                <h2>Next Level Experience</h2>
+                <p>
+                    Next Level Barbershop is a premium grooming experience for the entire family.
+                    From precision cuts to modern styles, we take pride in delivering top-tier results.
+                    Whether you know your look or need expert guidance, our professional barbers will take you to the next level.
+                </p>
+                <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn">Book Now</a>
             </div>
         </div>
+    </section>
 
-        <div class="benefit benefit-2">
-            <div class="overlay">
-                <h3>Professional Barbers</h3>
-                <p>Highly trained and experienced stylists.</p>
+    <!-- BENEFITS SECTION -->
+    <section class="benefits-section">
+        <h2 class="section-title center">Why Choose Us</h2>
+        <div class="benefits">
+            <div class="benefit benefit-1">
+                <div class="overlay">
+                    <h3>No Waiting Time</h3>
+                    <p>Book your appointment and skip the line.</p>
+                </div>
+            </div>
+            <div class="benefit benefit-2">
+                <div class="overlay">
+                    <h3>Professional Barbers</h3>
+                    <p>Highly trained and experienced stylists.</p>
+                </div>
+            </div>
+            <div class="benefit benefit-3">
+                <div class="overlay">
+                    <h3>Premium Service</h3>
+                    <p>Top quality service and attention to detail.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="benefit benefit-3">
-            <div class="overlay">
-                <h3>Premium Service</h3>
-                <p>Top quality service and attention to detail.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Next Level</h3>
+                <p>Premium grooming experience for the modern gentleman.</p>
+                <div class="socials">
+                    <a href="https://web.facebook.com/profile.php?id=100095076344630" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/angelysbeautynbarber" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:nextlevelbarbersalon045@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Schedule & Hours</h4>
+                <div class="hours-list">
+                    <div class="hour-row"><span class="day">MONDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row"><span class="day">TUESDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row"><span class="day">WEDNESDAY</span><span class="time">10:00AM - 7:00PM</span></div>
+                    <div class="hour-row"><span class="day">THURSDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row"><span class="day">FRIDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row"><span class="day">SATURDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row sunday"><span class="day">SUNDAY</span><span class="time">10:00AM - 5:00PM</span></div>
+                </div>
+                <div class="walkin-badge">
+                    <i class="fas fa-cut"></i>
+                    <span>Walk-ins Welcome | Appointments Preferred</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 4162 Carriage Square, Taylorsville, UT 84129</li>
+                    <li><i class="fas fa-phone-alt"></i> 801-435-5189</li>
+                    <li><i class="fas fa-envelope"></i> nextlevelbarbersalon045@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Book Now</h4>
+                <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn-footer" target="_blank" rel="noopener noreferrer">
+                    Appointment <i class="fas fa-arrow-right"></i>
+                </a>
+                <div class="footer-slogan">
+                    <p>LOOK SHARP.<br>FEEL NEXT LEVEL.</p>
+                </div>
             </div>
         </div>
-
-    </div>
-
-</section>
-
-    
-   <!-- FOOTER PREMIUM HORIZONTAL - CORREGIDO -->
-<footer class="footer">
-    <div class="footer-container">
-        <!-- Columna 1 - Logo y descripción -->
-        <div class="footer-col">
-            <h3>Next Level</h3>
-            <p>Premium grooming experience for the modern gentleman.</p>
-            <div class="socials">
-                <a href="https://facebook.com/tucuenta" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com/tucuenta" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:76926334@continental.edu.pe" title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Next Level Barbershop. All rights reserved.</p>
         </div>
+    </footer>
 
-        <!-- Columna 2 - Horario -->
-        <div class="footer-col">
-            <h4>Opening Hours</h4>
-            <ul>
-                <li>Mon - Fri: <span>9:00 AM - 8:00 PM</span></li>
-                <li>Saturday: <span>10:00 AM - 6:00 PM</span></li>
-                <li>Sunday: <span>Closed</span></li>
-            </ul>
-        </div>
-
-        <!-- Columna 3 - Contacto -->
-        <div class="footer-col">
-            <h4>Contact Info</h4>
-            <ul>
-                <li><i class="fas fa-map-marker-alt"></i> 4162 Carriage Square, Taylorsville,  UT 84120</li>
-                <li><i class="fas fa-phone-alt"></i> 801-435-5189</li>
-                <li><i class="fas fa-envelope"></i> info@nextlevel.com</li>
-            </ul>
-        </div>
-
-        <!-- Columna 4 - Botón (ahora alineado correctamente) -->
-        <div class="footer-col">
-            <h4>Book Now</h4>
-            <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn-footer" target="_blank" rel="noopener noreferrer">Appointment <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="footer-bottom">
-        <p>&copy; 2026 Next Level Barbershop. All rights reserved.</p>
-    </div>
-</footer>
- <script src="js/navbar.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/navbar.js"></script>
+    <script>
+        // Preloader
+        window.addEventListener("load", function() {
+            const preloader = document.getElementById("preloader");
+            if (preloader) {
+                setTimeout(() => {
+                    preloader.style.opacity = "0";
+                    setTimeout(() => {
+                        preloader.style.display = "none";
+                    }, 500);
+                }, 800);
+            }
+        });
+    </script>
 </body>
 </html>

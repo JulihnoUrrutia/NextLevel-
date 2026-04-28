@@ -266,3 +266,33 @@
     console.log('✅ Navbar initialized successfully');
     
 })();
+
+// ========================================
+// PRELOADER MEJORADO
+// ========================================
+window.addEventListener("load", function() {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+        // Esperar un momento mínimo para que se vea el preloader
+        setTimeout(() => {
+            preloader.style.opacity = "0";
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 500);
+        }, 800);
+    }
+});
+
+// También ocultar preloader si la página carga muy rápido
+document.addEventListener("DOMContentLoaded", function() {
+    // Fallback por si la página carga muy rápido
+    setTimeout(() => {
+        const preloader = document.getElementById("preloader");
+        if (preloader && preloader.style.display !== "none") {
+            preloader.style.opacity = "0";
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 500);
+        }
+    }, 3000);
+});

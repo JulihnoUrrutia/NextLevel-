@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Next Level Barbershop & Beauty. Visit us, call us, or send us a message. We're here to answer your questions and schedule your appointment.">
+    <meta name="keywords" content="barbería, barbershop, cortes de cabello, fade, barba, Taylorsville, Utah">
+    <meta name="author" content="Next Level Barbershop">
+    <meta name="geo.region" content="US-UT">
+    <meta name="geo.placename" content="Taylorsville">
+    <meta name="geo.position" content="40.68066;-111.94588">
+    <meta name="ICBM" content="40.68066, -111.94588">
+    <meta name="robots" content="contact, follow">
+    <title>Next Level Barbershop & Beauty - Contact Us</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- GOOGLE FONTS & FONT AWESOME -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Next Level Barbershop" class="logo-img">
+            <span class="logo-text">Next Level</span>
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="contact-hero">
+            <div class="contact-hero__overlay"></div>
+            <div class="contact-hero__content">
+                <h1 class="contact-hero__title">Get In <span>Touch</span></h1>
+                <p class="contact-hero__subtitle">We'd love to hear from you</p>
+                <div class="contact-hero__divider"></div>
+            </div>
+        </section>
+
+        <!-- CONTACT INFO & FORM SECTION -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Visit Us</h3>
+                            <p>4162 Carriage Square<br>Taylorsville, UT 84129</p>
+                            <a href="https://maps.google.com/?q=4162+Carriage+Square+Taylorsville+UT+84129" target="_blank" rel="noopener noreferrer" class="info-link">
+                                Get Directions <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                            <p>801-435-5189</p>
+                            <a href="tel:+18014355189" class="info-link">
+                                Call Now <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p>nextlevelbarbersalon045</p>
+                            <a href="mailto:nextlevelbarbersalon045@gmail.com" class="info-link">
+                                Send Email <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Opening Hours</h3>
+                            <div class="hours-list">
+                                <div class="hour-row"><span>Monday</span><span>10:00AM - 8:00PM</span></div>
+                                <div class="hour-row"><span>Tuesday</span><span>10:00AM - 8:00PM</span></div>
+                                <div class="hour-row"><span>Wednesday</span><span>10:00AM - 7:00PM</span></div>
+                                <div class="hour-row"><span>Thursday</span><span>10:00AM - 8:00PM</span></div>
+                                <div class="hour-row"><span>Friday</span><span>10:00AM - 8:00PM</span></div>
+                                <div class="hour-row"><span>Saturday</span><span>10:00AM - 8:00PM</span></div>
+                                <div class="hour-row sunday"><span>Sunday</span><span>10:00AM - 5:00PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <div class="form-header">
+                            <h2>Send Us a <span>Message</span></h2>
+                            <p>We'll get back to you as soon as possible</p>
+                        </div>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Service Interested In</label>
+                                    <select id="service" name="service">
+                                        <option value="">Select a service</option>
+                                        <option value="haircut">Haircut</option>
+                                        <option value="beard">Beard Grooming</option>
+                                        <option value="color">Color Service</option>
+                                        <option value="facial">Facial Treatment</option>
+                                        <option value="makeup">Makeup</option>
+                                        <option value="kids">Kids Cut</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GOOGLE MAPS SECTION -->
+        <section class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Find <span>Us</span></h2>
+                    <p class="section-subtitle">Visit our location</p>
+                    <div class="title-decoration">
+                        <div class="line"></div>
+                        <div class="dot"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.6963155970584!2d-111.94588305355359!3d40.68065976602838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528bb434930035%3A0xe2628a7a4bef3ece!2sNext%20Level%20Barber%20and%20Beauty!5e0!3m2!1sen!2sus!4v1777323216639!5m2!1sen!2sus"
+                        width="100%"
+                        height="450"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                        title="Google Maps location of Next Level Barbershop & Beauty at 4162 Carriage Square, Taylorsville, UT 84129">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL SECTION -->
+        <section class="social-section">
+            <div class="container">
+                <div class="social-card">
+                    <h3>Follow Us on Social Media</h3>
+                    <p>Stay connected for updates, promotions, and inspiration</p>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/profile.php?id=100095076344630&mibextid=wwXIfr&rdid=1HoKhTThtDlv4sR5&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1EBWk6GXyi%2F%3Fmibextid%3DwwXIfr%26_rdc%3D1%26_rdr#"target="_blank" rel="noopener noreferrer" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/angelysbeautynbarber?igsh=MThjODI4cjduc2FsaA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2>Ready to look your best?</h2>
+                <p>Book your appointment today and experience the Next Level difference</p>
+                <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                    Book Your Appointment <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Next Level</h3>
+                <p>Premium grooming experience for the modern gentleman.</p>
+                <div class="socials">
+                    <a href="https://web.facebook.com/profile.php?id=100095076344630&mibextid=wwXIfr&rdid=1HoKhTThtDlv4sR5&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F1EBWk6GXyi%2F%3Fmibextid%3DwwXIfr%26_rdc%3D1%26_rdr#" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/angelysbeautynbarber?igsh=MThjODI4cjduc2FsaA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:nextlevelbarbersalon045@gmail.com" title="Send us an email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Schedule & Hours</h4>
+                <div class="hours-list">
+                    <div class="hour-row"><span class="day">MONDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row"><span class="day">TUESDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row"><span class="day">WEDNESDAY</span><span class="time">10:00AM - 7:00PM</span></div>
+                    <div class="hour-row"><span class="day">THURSDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row"><span class="day">FRIDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row"><span class="day">SATURDAY</span><span class="time">10:00AM - 8:00PM</span></div>
+                    <div class="hour-row sunday"><span class="day">SUNDAY</span><span class="time">10:00AM - 5:00PM</span></div>
+                </div>
+                <div class="walkin-badge">
+                    <i class="fas fa-cut"></i>
+                    <span>Walk-ins Welcome | Appointments Preferred</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 4162 Carriage Square, Taylorsville, UT 84129</li>
+                    <li><i class="fas fa-phone-alt"></i> 801-435-5189</li>
+                    <li><i class="fas fa-envelope"></i> nextlevelbarbersalon045@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Book Now</h4>
+                <a href="https://www.vagaro.com/angelysbeautyandbarbersalon/book-now" class="btn-footer" target="_blank" rel="noopener noreferrer">Appointment <i class="fas fa-arrow-right"></i></a>
+                <div class="footer-slogan"><p>LOOK SHARP.<br>FEEL NEXT LEVEL.</p></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Next Level Barbershop. All rights reserved.</p></div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // ⚠️ REEMPLAZA "TU_PUBLIC_KEY_AQUI" CON TU PUBLIC KEY DE EMAILJS ⚠️
+        emailjs.init("jIJzAUfeCym6xKYWi");
+        console.log('✅ EmailJS initialized');
+    })();
+</script>
+
+    <!-- SCRIPTS -->
+    <script src="js/navbar.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

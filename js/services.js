@@ -1,8 +1,3 @@
-// ========================================
-// SERVICES DATA COMPLETA - SPA BARBERIA
-// EACH SERVICE IS INDIVIDUAL (NO GROUPING)
-// ALL IN ENGLISH
-// ========================================
 
 const servicesData = [
 
@@ -82,7 +77,7 @@ const servicesData = [
         description: 'Traditional fade that gradually tapers down. Clean and timeless.',
         image: '../img/taperfade.jpg',
         duration: 35,
-        price: '$35'
+        price: '$40'
     },
     {
         id: 8,
@@ -159,7 +154,19 @@ const servicesData = [
         description: 'Creative patterns, hair tattoos, and personalized freestyle designs.',
         image: 'img/Artistdesign.jpg',
         duration: 60,
-        price: '$55+'
+        price: '$35+'
+    },
+
+    {
+        id: 73,
+        audience: 'men',
+        category: 'haircuts',
+        subcategory: 'design',
+        title: 'Mid Fade with Design',
+        description: 'Creative patterns, hair tattoos, and personalized freestyle designs.',
+        image: '../img/Midfadewithdesign.jpg',
+        duration: 60,
+        price: '$35+'
     },
 
     // ==================== 👨 MEN - PERMS ====================
@@ -315,7 +322,7 @@ const servicesData = [
         subcategory: 'trim',
         title: 'Circle Beard',
         description: 'Circle beard that frames the mouth. Clean and defined style.',
-        image: '../img/circlebeard.jpg',
+        image: 'https://assets.beardsorcery.com/content/public/images/bY69bSGDj3oPVoSbPAyFXWQhf0KLAqSON75v9G01.jpg',
         duration: 25,
         price: '$25'
     },
@@ -330,7 +337,7 @@ const servicesData = [
         description: 'Layered cut with soft movement inspired by butterfly wings.',
         image: '../img/butterflycut.jpeg',
         duration: 50,
-        price: '$50+'
+        price: '$40'
     },
     {
         id: 30,
@@ -341,7 +348,7 @@ const servicesData = [
         description: 'Layered cut perfect for volume and movement when blow-drying.',
         image: '../img/LayeredBlowoutCut.jpg',
         duration: 45,
-        price: '$45+'
+        price: '$40'
     },
     {
         id: 31,
@@ -350,9 +357,9 @@ const servicesData = [
         subcategory: 'cut',
         title: 'U Cut',
         description: 'Classic U-shaped cut. Elegant and timeless style.',
-        image: 'img/ucut.jpg',
+        image: 'https://www.thelist.com/img/gallery/why-a-u-shaped-haircut-is-perfect-if-you-have-fine-hair/l-intro-1674585371.jpg',
         duration: 40,
-        price: '$40+'
+        price: '$40'
     },
     {
         id: 32,
@@ -361,9 +368,9 @@ const servicesData = [
         subcategory: 'cut',
         title: 'V Cut',
         description: 'Dramatic V-shaped cut. Stylish and eye-catching look.',
-        image: 'img/vcut.jpg',
+        image: 'https://i0.wp.com/www.hadviser.com/wp-content/uploads/2022/05/7-v-cut-hairstyle-with-designed-flips-ClWPEArBmLL.jpg?resize=1225%2C1440&ssl=1',
         duration: 40,
-        price: '$40+'
+        price: '$40'
     },
     {
         id: 33,
@@ -385,7 +392,7 @@ const servicesData = [
         description: 'Straight and defined bob cut. Modern and elegant style.',
         image: 'img/bluntbob.jpg',
         duration: 45,
-        price: '$45+'
+        price: '$40'
     },
     {
         id: 35,
@@ -394,7 +401,7 @@ const servicesData = [
         subcategory: 'cut',
         title: 'Lob Bob',
         description: 'Long bob. Versatile and easy to manage.',
-        image: 'img/lobbob.jpg',
+        image: 'https://i.pinimg.com/236x/e1/10/cf/e110cf214a7c6b1bd72536c4c7b0837a.jpg',
         duration: 45,
         price: '$45+'
     },
@@ -418,7 +425,7 @@ const servicesData = [
         description: 'Female wolf cut with layers and messy texture. Rocker style.',
         image: '../img/wolfcupwomen.jpg',
         duration: 50,
-        price: '$50+'
+        price: '$40+'
     },
     {
         id: 38,
@@ -429,7 +436,7 @@ const servicesData = [
         description: 'Shag cut with disconnected layers. Attitude and style.',
         image: 'img/shagcut.jpg',
         duration: 50,
-        price: '$50+'
+        price: '$40+'
     },
     {
         id: 39,
@@ -438,9 +445,9 @@ const servicesData = [
         subcategory: 'cut',
         title: 'Curtain Bangs',
         description: 'Curtain bangs only. Frames the face perfectly.',
-        image: '../img/curtainbangs.jpg',
+        image: 'https://www.mcintyres.co.uk/wp-content/blogs.dir/188/files/2024/06/curtain-fringes.jpg',
         duration: 25,
-        price: '$25'
+        price: '$40+'
     },
 
     // ==================== 👩 WOMEN - COLOR ====================
@@ -453,19 +460,9 @@ const servicesData = [
         description: 'French hand-painted coloring technique. Natural sun-kissed effect.',
         image: '../img/Caramelbalayage.jpg',
         duration: 90,
-        price: '$85+'
+        price: '$200-$400'
     },
-    {
-        id: 41,
-        audience: 'women',
-        category: 'color',
-        subcategory: 'balayage',
-        title: 'Foilage',
-        description: 'Combination of balayage with foil for extra brightness.',
-        image: 'img/foilage.jpg',
-        duration: 90,
-        price: '$85+'
-    },
+   
     {
         id: 42,
         audience: 'women',
@@ -475,7 +472,7 @@ const servicesData = [
         description: 'Face-framing highlights that brighten and enhance your features.',
         image: '../img/Moneypiecebalayage.jpg',
         duration: 75,
-        price: '$75+'
+        price: '$200-$400'
     },
     {
         id: 43,
@@ -486,7 +483,7 @@ const servicesData = [
         description: 'Root blending for natural grown-out look without harsh lines.',
         image: '../img/rootmelt.jpg',
         duration: 60,
-        price: '$60+'
+        price: '$120-$200 '
     },
     {
         id: 44,
@@ -497,7 +494,7 @@ const servicesData = [
         description: 'Darker root that softly melts into lighter ends. Low maintenance.',
         image: '../img/shadowroot.jpg',
         duration: 60,
-        price: '$60+'
+        price: '$120-$200'
     },
     {
         id: 45,
@@ -508,7 +505,7 @@ const servicesData = [
         description: 'Classic highlights that add dimension and light to your hair.',
         image: '../img/highlights.jpg',
         duration: 75,
-        price: '$70+'
+        price: '$200-$400'
     },
     {
         id: 46,
@@ -519,7 +516,7 @@ const servicesData = [
         description: 'Very subtle baby-like highlights. Natural and sophisticated look.',
         image: '../img/babylights.jpg',
         duration: 90,
-        price: '$90+'
+        price: '$120-$200'
     },
 
     // ==================== 👩 WOMEN - PERMS ====================
@@ -600,7 +597,7 @@ const servicesData = [
         description: 'Eyebrow shaping with wax or tweezers. Perfect definition.',
         image: '../img/EyebrowShaping.jpg',
         duration: 20,
-        price: '$15'
+        price: '$40'
     },
     {
         id: 54,
@@ -611,7 +608,7 @@ const servicesData = [
         description: 'Eyebrow lamination. Perfect fixing and voluminous look.',
         image: '../img/BrowLamination.jpeg',
         duration: 40,
-        price: '$35'
+        price: '$65'
     },
     {
         id: 55,
@@ -622,7 +619,7 @@ const servicesData = [
         description: 'Eyebrow tinting. Long-lasting color and natural definition.',
         image: '../img/EyebrowTinting.jpg',
         duration: 25,
-        price: '$20'
+        price: '$75'
     },
     {
         id: 56,
@@ -633,7 +630,7 @@ const servicesData = [
         description: 'Lash lifting and tinting. Awake and natural-looking eyes.',
         image: '../img/Lashliftandtint.jpg',
         duration: 50,
-        price: '$45'
+        price: '$75'
     },
 
     // ==================== 👩 WOMEN - MAKEUP ====================
@@ -646,7 +643,7 @@ const servicesData = [
         description: 'Soft makeup with natural and luminous finish. Effortless look.',
         image: '../img/SoftNaturalGlow.jpg',
         duration: 45,
-        price: '$40'
+        price: '$80+'
     },
     {
         id: 58,
@@ -657,7 +654,7 @@ const servicesData = [
         description: 'Perfect day look for daily wear. Fresh and natural.',
         image: '../img/EverydayMakeup.png',
         duration: 45,
-        price: '$40'
+        price: '$80+'
     },
     {
         id: 59,
@@ -668,7 +665,7 @@ const servicesData = [
         description: 'Bridal makeup trial session. Perfect your wedding day look.',
         image: '../img/BridalTrialMakeup.png',
         duration: 90,
-        price: '$80'
+        price: '$80+'
     },
     {
         id: 60,
@@ -679,7 +676,7 @@ const servicesData = [
         description: 'Elegant makeup for special events. Soft and glamorous.',
         image: '../img/SoftGlam.jpg',
         duration: 60,
-        price: '$60'
+        price: '$80+'
     },
     {
         id: 61,
@@ -690,7 +687,7 @@ const servicesData = [
         description: 'Camera-ready makeup for photoshoots. Flawless finish.',
         image: '../img/PhotoshootMakeup.jpg',
         duration: 75,
-        price: '$70'
+        price: '$80+'
     },
     {
         id: 62,
@@ -701,7 +698,7 @@ const servicesData = [
         description: 'Stunning makeup for prom night. Memorable and beautiful.',
         image: '../img/PromMakeup.jpg',
         duration: 60,
-        price: '$60'
+        price: '$80+'
     },
     {
         id: 63,
@@ -712,7 +709,7 @@ const servicesData = [
         description: 'Special makeup for graduation day. Photogenic and elegant.',
         image: '../img/GraduationMakeup.jpg',
         duration: 60,
-        price: '$60'
+        price: '$80+    '
     },
 
     // ==================== 👩 WOMEN - ARTISTIC MAKEUP ====================
@@ -725,7 +722,7 @@ const servicesData = [
         description: 'Creative Halloween makeup designs. Spooky and fun.',
         image: '../img/HalloweenMakeup.jpg',
         duration: 90,
-        price: '$70+'
+        price: '$80+'
     },
     {
         id: 65,
@@ -747,7 +744,7 @@ const servicesData = [
         description: 'Traditional Day of the Dead Catrina makeup. Beautiful and cultural.',
         image: '../img/CatrinasMakeup.jpg',
         duration: 90,
-        price: '$75+'
+        price: '$80+'
     },
 
     // ==================== 👦 KIDS - HAIRCUTS ====================
@@ -760,7 +757,7 @@ const servicesData = [
         description: 'Clean taper fade for kids. Age-appropriate and stylish.',
         image: '../img/taperfadechild.jpg',
         duration: 25,
-        price: '$22'
+        price: '$40'
     },
     {
         id: 68,
@@ -771,7 +768,7 @@ const servicesData = [
         description: 'Subtle low fade for kids. Modern and clean look.',
         image: '../img/lowfadechild.jpg',
         duration: 25,
-        price: '$22'
+        price: '$35'
     },
     {
         id: 69,
@@ -782,7 +779,7 @@ const servicesData = [
         description: 'Versatile mid fade for kids. Balanced and trendy.',
         image: '../img/midfadechild.jpg',
         duration: 25,
-        price: '$22'
+        price: '$35'
     },
     {
         id: 70,
@@ -793,7 +790,7 @@ const servicesData = [
         description: 'Creative lines and freestyle designs. Fun and personalized.',
         image: '../img/desingchild.jpeg',
         duration: 30,
-        price: '$25'
+        price: '$35+'
     },
     {
         id: 71,
@@ -804,7 +801,7 @@ const servicesData = [
         description: 'Traditional classic haircut for kids. Clean and timeless.',
         image: '../img/ClassicCutchild.jpg',
         duration: 20,
-        price: '$20'
+        price: '$35'
     },
     {
         id: 72,
@@ -815,8 +812,30 @@ const servicesData = [
         description: 'Trendy modern haircut for kids. Age-appropriate contemporary style.',
         image: '../img/moderncutchild.jpg',
         duration: 25,
-        price: '$22'
-    }
+        price: '$35'
+    },
+    {
+        id: 74,
+        audience: 'kids',
+        category: 'haircuts',
+        subcategory: 'fade',
+        title: 'Mid Fade Design',
+        description: 'Mid fade with creative design for kids. Fun and stylish look.',
+        image: '../img/midfadedesing.jpg',
+        duration: 25,
+        price: '$35+'
+    },
+    {
+        id: 75,
+        audience: 'kids',
+        category: 'haircuts',
+        subcategory: 'fade',
+        title: 'Skin Fade Design',
+        description: 'Skin fade with creative design for kids. Fun and stylish look.',
+        image: '../img/Skinhadechil.jpg',
+        duration: 25,
+        price: '$35+'
+    },
 ];
 
 // ========================================
